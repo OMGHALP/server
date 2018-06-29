@@ -11,8 +11,6 @@ const conString = `postgres://travis:1234@localhost:5432/omghalpproject`
 //Mac
 // const conString = `postgres://localhost:5432/omghalp_app`
 
-// Deployed
-// const conString = `postgres://iidlcfkfxqvklw:e2ade26e5c65ace8fe054a0e07aa55738148db89c5ecfce414b68df170d51f21@ec2-54-235-70-127.compute-1.amazonaws.com:5432/dc56a5usjoofc0`
 
 //  const client = new pg.Client(process.env.DATABASE_URL);
 
@@ -93,7 +91,6 @@ app.put('/solution', (req, res) => {
             console.error(err);
         });
 })
-
 
 // Server Listen to Request
 app.listen(PORT, () => console.log(`Your server works on ${PORT} dude!`));
